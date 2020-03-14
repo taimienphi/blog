@@ -18,6 +18,47 @@ baseurl:             /blog
 
 excerpt_separator:   <!--more-->
 
+prose:
+  siteurl: 'https://taimienphi.github.io/blog'
+  media: 'media'
+  ignore:
+    - /downloads
+    - /public
+    - /tags
+    - /media
+    - /.sass-cache
+    - /.gitignore
+    - /404.html
+    - /LICENSE*
+    - /atom.xml
+  metadata:
+      _posts:
+        - name: "title"
+          field:
+            element: "text"
+            label: "Title"
+            value: ""
+        - name: "layout"
+          field:
+            element: "hidden"
+            value: "post"
+        - name: "tags"
+          field:
+            element: "multiselect"
+            label: "Add Tags"
+            alterable: "true"
+            options:
+        - name: "ads"
+          field:
+            element: "checkbox"
+            label: "Advertising"
+            value: "true"
+        - name: "comments"
+          field:
+            element: "checkbox"
+            label: "Comments"
+            value: "true"
+
 # Assets
 #
 # We specify the directory for Jekyll so we can use @imports.
